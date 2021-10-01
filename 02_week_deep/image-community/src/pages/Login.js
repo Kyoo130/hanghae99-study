@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, Input, Grid, Button } from "../elements";
-import { getCookie, setCookie, deleteCookie } from "../shared/Cookie";
+import { getCookie, setCookie } from "../shared/Cookie";
 
 const Login = (props) => {
 
@@ -42,8 +42,7 @@ const Login = (props) => {
           text="로그인하기"
           _onClick={() => {
             console.log("로그인 했어!");
-            // Login();
-            // deleteCookie("user_id");
+            Login();
           }}
         ></Button>
       </Grid>
@@ -52,3 +51,4 @@ const Login = (props) => {
 };
 
 export default Login;
+

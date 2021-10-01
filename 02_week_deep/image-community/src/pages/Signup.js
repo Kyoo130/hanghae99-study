@@ -12,21 +12,17 @@ const Signup = (props) => {
   const [pwd_check, setPwdCheck] = React.useState("");
   const [user_name, setUserName] = React.useState("");
 
-
   const signup = () => {
     if (id === "" || pwd === "" || user_name === "") {
       return;
     }
-
+    
     if (pwd !== pwd_check) {
       return;
     }
 
-
     dispatch(userActions.signupFB(id, pwd, user_name));
-  }
-
-
+  };
   return (
     <React.Fragment>
       <Grid padding="16px">
@@ -39,7 +35,7 @@ const Signup = (props) => {
             label="아이디"
             placeholder="아이디를 입력해주세요."
             _onChange={(e) => {
-              setId(e.target.value)
+              setId(e.target.value);
             }}
           />
         </Grid>

@@ -8,7 +8,7 @@ import { actionCreators as userActions } from "../redux/modules/user";
 
 import { history } from "../redux/configureStore";
 import { apiKey } from "../shared/firebase";
-import Permit from "../shared/Permit";
+// import Permit from "../shared/Permit";
 
 const Header = (props) => {
     const dispatch = useDispatch();
@@ -34,7 +34,6 @@ const Header = (props) => {
                     </Grid>
                 </Grid>
             </React.Fragment>
-
         );
     }
 
